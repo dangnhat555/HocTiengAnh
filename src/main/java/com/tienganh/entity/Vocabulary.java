@@ -1,4 +1,4 @@
-package com.dacky.entity;
+package com.tienganh.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

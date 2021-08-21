@@ -1,4 +1,4 @@
-package com.dacky.controller;
+package com.tienganh.controller;
 
 import java.util.Comparator;
 import java.util.List;
@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.dacky.entity.Vocabulary;
-import com.dacky.service.VocabularyService;
+import com.tienganh.entity.Vocabulary;
+import com.tienganh.service.VocabularyService;
 
 @Controller
 @RequestMapping("/")

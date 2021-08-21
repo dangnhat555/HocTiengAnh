@@ -1,4 +1,4 @@
-package com.dacky.service.implement;
+package com.tienganh.service.implement;
 
 import java.util.List;
 import java.util.Optional;
@@ -10,9 +10,9 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import com.dacky.entity.Vocabulary;
-import com.dacky.repository.VocabularyRepository;
-import com.dacky.service.VocabularyService;
+import com.tienganh.entity.Vocabulary;
+import com.tienganh.repository.VocabularyRepository;
+import com.tienganh.service.VocabularyService;
 
 @Service
 public class VocabularyServiceImpl implements VocabularyService{
@@ -65,11 +65,5 @@ public class VocabularyServiceImpl implements VocabularyService{
 		return vocabularyRepository.save(vocabulary);
 	}
 
-	@Override
-	public List<Vocabulary> getVocabulary(int count) {
-		Pageable paging = PageRequest.of(0, count, Sort.by("id").ascending());
-		Page<Vocabulary> pageable = vocabularyRepository.getVocabulary(paging);
-		return pageable.getContent();
-	}
 	
 }

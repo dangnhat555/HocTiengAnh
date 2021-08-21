@@ -1,8 +1,8 @@
-package com.dacky.service;
+package com.tienganh.service;
 
 import java.util.List;
 
-import com.dacky.entity.Vocabulary;
+import com.tienganh.entity.Vocabulary;
 
 public interface VocabularyService {
 
@@ -17,7 +17,5 @@ public interface VocabularyService {
 	Vocabulary findById(Long id);
 
 	Vocabulary updateVocabulary(Long id, String eng, String vi);
-
-	List<Vocabulary> getVocabulary(int count);
 
 }

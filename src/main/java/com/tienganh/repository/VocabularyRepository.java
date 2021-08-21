@@ -1,4 +1,4 @@
-package com.dacky.repository;
+package com.tienganh.repository;
 
 import java.util.List;
 import java.util.Optional;
@@ -9,7 +9,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import com.dacky.entity.Vocabulary;
+import com.tienganh.entity.Vocabulary;
 
 @Repository
 public interface VocabularyRepository extends JpaRepository<Vocabulary, Long>{
